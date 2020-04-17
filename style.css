@@ -8,8 +8,7 @@ body, html{
     margin:0;
     width:100vw;
     height:100vh;
-    display: flex;
-    flex-direction: column;
+    position: absolute;
 }
 
 h1{
@@ -24,10 +23,14 @@ h1{
 .toggle{
     text-align: center;
     margin-top: 35px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
 }
 .toggle > p{
-    display: inline-flex;
+    display: inline;
     color: hsl(234, 14%, 74%);
+    padding:15px;
 }
 .switch {
     position: relative;
@@ -96,8 +99,8 @@ h1{
       justify-content: center;
       align-items: center;
       margin:auto;
-      margin-top:60px;
-      margin-bottom:20px;
+      margin-top:50px;
+      margin-bottom:30px;
   }
 
   .itemBasic{
@@ -132,6 +135,12 @@ h1{
     text-align: center;
     border-radius: 10px 10px 10px 10px;
     box-shadow:0 0.3rem 1rem rgba(0,0,0,0.2);
+  }
+
+  .itemBasic, .itemProfessional, .itemMaster { 
+    margin-bottom:20px;
+    margin-top:10px;
+
   }
 /* ---------------- Card Classes -----------*/
   h2{
@@ -191,9 +200,11 @@ h1{
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
-
 @media only screen and (max-width: 375px){	
-    .itemBasic, .itemProfessional, .itemMaster{	
-      margin-top:25px;
-    }
+  body{
+    background-image: url("./images/bg-top.svg");
+    background-repeat: no-repeat;
+    background-position: right top;
+    background-size: 350px 700px;
+  }
 }
