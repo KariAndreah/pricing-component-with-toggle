@@ -3,6 +3,9 @@ Finished most of the design for the app.
 ****************Issues*******************
 Issues with placing the svg images in the background. Also, adding the lines, but I'll figure it out. Also need to input toggle function. 
 
+Day 2:
+Figured out toggle by changing the element inner HTML. Also finished design. 
+
 # Frontend Mentor - File Transfer pricing component
 
 ![Design preview for the File Transfer pricing component coding challenge](./design/desktop-preview.jpg)

@@ -1,11 +1,20 @@
 body, html{
     background-color: hsl(240, 78%, 98%);
     font-family: 'Montserrat', sans-serif;
+    background-image: url("./images/bg-top.svg"), url("./images/bg-bottom.svg");
+    background-repeat: no-repeat;
+    background-position: right top, left bottom;
+    background-size: 350px 700px, 300px 200px;
+    margin:0;
+    width:100vw;
+    height:100vh;
+    display: flex;
+    flex-direction: column;
 }
 
 h1{
+    padding-top:45px;
     text-align: center;
-    margin-top: 80px;
     font-size: 25px;
     color: hsl(233, 13%, 49%);
 }
@@ -14,7 +23,7 @@ h1{
 
 .toggle{
     text-align: center;
-    margin-top: 40px;
+    margin-top: 35px;
 }
 .toggle > p{
     display: inline-flex;
@@ -39,7 +48,7 @@ h1{
     left: 0;
     right: 0;
     bottom: 0;
-    background-color: #ccc;
+    background-color: hsl(236, 72%, 79%);
     -webkit-transition: .4s;
     transition: .4s;
   }
@@ -88,6 +97,7 @@ h1{
       align-items: center;
       margin:auto;
       margin-top:60px;
+      margin-bottom:20px;
   }
 
   .itemBasic{
@@ -96,12 +106,10 @@ h1{
       flex:1;
       height:450px;
       background-color: white;
+      color:hsl(232, 13%, 33%);
       text-align: center;
       border-radius: 10px 10px 10px 10px;
       box-shadow:0 0.3rem 1rem rgba(0,0,0,0.2);
-      display: flex;
-      flex-direction: column;
-      justify-content: center;
   }
   .itemProfessional{
     max-width:350px;
@@ -113,9 +121,6 @@ h1{
     text-align: center;
     border-radius: 10px 10px 10px 10px;
     box-shadow:0 0.3rem 1rem rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
   .itemMaster{
     max-width:350px;
@@ -123,37 +128,66 @@ h1{
     flex:1;
     height:450px;
     background-color: white;
+    color:hsl(232, 13%, 33%);
     text-align: center;
     border-radius: 10px 10px 10px 10px;
     box-shadow:0 0.3rem 1rem rgba(0,0,0,0.2);
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
   }
-
+/* ---------------- Card Classes -----------*/
   h2{
       font-size: 50px;
   }
-
-  .button1{
+  .storage, .users, .storage, .send {
+    border-top: 0.5px solid  hsl(234, 14%, 74%);
+    width:300px;
+    margin: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .send{
+    border-bottom: 0.5px solid  hsl(234, 14%, 74%);
+  }
+  .storage2, .users2, .storage2, .send2 {
+    border-top: 0.5px solid  white;
+    width:300px;
+    margin: auto;
+    padding-top:20px;
+    padding-bottom:20px;
+  }
+  .send2{
+    border-bottom: 0.5px solid  white;
+  }
+  .title{
+    margin-top: 35px;
+    margin-bottom:-20px;
+  }
+  .cost{
+    margin-bottom: 30px;
+  }
+  .cost2{
+    margin-bottom: 30px;
+  }
+  .buttonWhite{
       width:290px;
       height:40px;
       background-color: white;
+      border:none;
       border-radius: 5px;
       color: hsl(237, 63%, 64%);
       margin:auto;
-      border-color: hsl(237, 63%, 64%);
+      margin-top:30px;
       font-size: 15px;
       font-family: 'Montserrat', sans-serif;
   }
-  .button2{
+  .buttonPurple{
     width:290px;
     height:40px;
-    background-color: hsl(237, 63%, 64%);
+    background-image:linear-gradient(to right ,hsl(236, 72%, 79%), hsl(237, 63%, 64%));
     border-radius: 5px;
+    border:none;
     color: white;
     margin:auto;
-    border-color: white;
+    margin-top:30px;
     font-size: 15px;
     font-family: 'Montserrat', sans-serif;
 }
