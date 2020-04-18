@@ -22,10 +22,10 @@ h1{
 
 .toggle{
     text-align: center;
-    margin-top: 14px;
     display: flex;
     align-items: center;
     justify-content: center;
+    margin: -10px;
 }
 .toggle > p{
     display: inline;
